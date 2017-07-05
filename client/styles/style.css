@@ -78,11 +78,11 @@ a:hover {
   ========================================
 */
 
-.logo {
+.nav-logo {
   float: left;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Tangerine', cursive;
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 700;
   letter-spacing: 1px;
   padding: 6px;
 }
@@ -114,4 +114,22 @@ a:hover {
 .nav li:last-child {
   margin-right: 0;
   border: none;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.logo {
+  text-align: center;
+  font-family: 'Tangerine', cursive;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 12px;
+}
+.quote {
+  text-align: center;
+  font-size: 20px;
 }

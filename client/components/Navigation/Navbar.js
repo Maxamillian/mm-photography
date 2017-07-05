@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 // Navigation Menu
 const NavBarLinks = () => (
   <div>
-    <Link className="logo" to={'/'}>MM</Link>
+    <Link className="nav-logo" to={'/'}>MM</Link>
 
     <nav className="nav primary-nav">
       <ul>
