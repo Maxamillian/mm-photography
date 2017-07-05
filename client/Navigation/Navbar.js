@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 // Navigation Menu
 const NavBarLinks = () => (
   <div>
-    <h1 className="logo">
-      <a href="#">MM</a>
-    </h1>
+    <Link className="logo" to={'/'}>MM</Link>
 
     <nav className="nav primary-nav">
       <ul>
-        <li><a href="#">Galleries</a></li>
-        <li><a href="#">Book now</a></li>
-        <li><a href="#">Sign in</a></li>
+        <li><Link to={'/'}>Galleries</Link></li>
+        <li><Link to={'/'}>Book now</Link></li>
+        <li><Link to={'/'}>Sign in</Link></li>
       </ul>
     </nav>
   </div>
