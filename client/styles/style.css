@@ -33,6 +33,9 @@ body {
 ol, ul {
   list-style: none;
 }
+li {
+  padding-bottom: 4px;
+}
 blockquote, q {
   quotes: none;
 }
@@ -59,6 +62,83 @@ body {
 }
 
 /*
+  =======================================
+  Flexbox
+  =======================================
+*/
+
+.container {
+  display: flex;
+  margin: 12px;
+}
+.item {
+  padding: 12px;
+  height: 250px;
+}
+.small {
+  height: 200px;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h3, h4, h5, p {
+  margin-bottom: 5px;
+}
+h1, h2, h3, h4 {
+  color: #600000;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+  text-decoration: underline;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #600000;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
+}
+
+/*
   ========================================
   Links
   ========================================
@@ -66,10 +146,85 @@ body {
 
 a {
   color: #600000;
+  font-size: 18px;
   text-decoration: none;
 }
 a:hover {
   color: #d00;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 5px;
+  border: 3px solid #abdbcd;
+  background-color: #fff;
+  color: #600000;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  width: 150px;
+  font-family: 'Zilla Slab', "Open Sans", "Helvetica Neue", Helvetica, Arial, serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+}
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #77a198;
+}
+
+/*
+  ========================================
+  Images
+  ========================================
+*/
+
+.frame {
+  border-radius: 22px;
+}
+
+/*
+  ========================================
+  Modals
+  ========================================
+*/
+.modal {
+  max-height: calc(100% - 100px);
+  position: fixed;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 22px;
+  padding: 12px;
+  z-index: 9999;
+  background: #fff;
+}
+.backdrop {
+  position: absolute;
+  width: 100%;
+  height: 400%;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /*
@@ -82,9 +237,8 @@ a:hover {
   float: left;
   font-family: 'Tangerine', cursive;
   font-size: 22px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 6px;
+  font-weight: 900;
+  padding: 9px;
 }
 .primary-nav {
   font-size: 14px;
@@ -132,4 +286,11 @@ a:hover {
 .quote {
   text-align: center;
   font-size: 20px;
+}
+.about-me {
+  width: 340px;
+}
+.profile {
+  float: right;
+  width: 80px;
 }
