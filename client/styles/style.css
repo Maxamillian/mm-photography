@@ -69,6 +69,8 @@ body {
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 12px;
 }
 .item {
@@ -87,7 +89,7 @@ body {
 
 .group:before,
 .group:after {
-  content: "";
+  content: '';
   display: table;
 }
 .group:after {
@@ -173,7 +175,10 @@ a:hover {
   font-size: 14px;
   text-transform: uppercase;
 }
-.btn-alt {
+.btn:hover {
+  color: #d00;
+}
+/*.btn-alt {
   border: 1px solid #fff;
   padding: 10px 30px;
 }
@@ -189,7 +194,7 @@ a:hover {
 }
 .btn-default:hover {
   background: #77a198;
-}
+}*/
 
 /*
   ========================================

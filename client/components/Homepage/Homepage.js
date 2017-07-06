@@ -8,7 +8,7 @@ class Homepage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isModalOpen: false
+      isModalOpen: this.props.isModalOpen
     };
   }
 
@@ -35,25 +35,20 @@ class Homepage extends Component {
 
           <img className="item frame" src="client/styles/images/hummingbird.jpg" alt="Hummingbird"/>
           <img className="item frame" src="client/styles/images/wedding.jpg" alt="Bride & Groom at a wedding"/>
-        </div>
 
-        <div className="container">
           <img className="small item frame" src="client/styles/images/baby.jpg" alt="Newborn baby"/>
           <img className="small item frame" src="client/styles/images/rocky-mountains.jpg" alt="Rocky Mountains"/>
 
           <ul className="small item">
             <h2>Looking for a photographer?</h2>
             <li><button className="btn" onClick={() => this.toggleModal()}>Book a session</button></li>
-
-            <Modal className="modal" isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()} width="80" height="80">
-              <InquiryForm toggleModal={this.toggleModal.bind(this)} />
-            </Modal>
-
             <li><button className="btn">Contact me</button></li>
           </ul>
-        </div>
 
-        <div className="container">
+          <Modal className="modal" isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()} width="80" height="80">
+            <InquiryForm toggleModal={this.toggleModal.bind(this)} />
+          </Modal>
+
           <div className="item about-me">
             <h2>About me</h2>
             <img className="profile frame" src="client/styles/images/moriah.jpg" alt="Moriah Maddux Profile"/>
