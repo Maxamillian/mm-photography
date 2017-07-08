@@ -30,7 +30,7 @@ class NavBarLinks extends Component {
           </ul>
         </nav>
 
-        <Modal className="modal" isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()} width="80" height="80">
+        <Modal className="modal" isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()}>
           <InquiryForm toggleModal={this.toggleModal.bind(this)} />
         </Modal>
       </div>

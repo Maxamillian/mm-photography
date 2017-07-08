@@ -58,7 +58,7 @@ table {
 body {
   background: #fff;
   color: #600000;
-  font-family: 'Zilla Slab', "Open Sans", "Helvetica Neue", Helvetica, Arial, serif;
+  font-family: 'Zilla Slab', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, serif;
 }
 
 /*
@@ -170,7 +170,7 @@ a:hover {
   display: inline-block;
   margin: 0;
   width: 150px;
-  font-family: 'Zilla Slab', "Open Sans", "Helvetica Neue", Helvetica, Arial, serif;
+  font-family: 'Zilla Slab', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -299,3 +299,27 @@ a:hover {
   float: right;
   width: 80px;
 }
+
+/*
+  ========================================
+  Inquiry
+  ========================================
+*/
+
+input,
+select,
+textarea {
+  font: 300 16px/22px 'Zilla Slab', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, serif;
+  border: 1px solid #c6c9cc;
+  border-radius: 5px;
+  display: block;
+  margin: 5px 0 27px 0;
+  padding: 5px 8px;
+}
+.inquiry {
+  margin: 0 14px 18px 14px;
+}
+.cancel {
+  margin-right: 10px;
+}
+

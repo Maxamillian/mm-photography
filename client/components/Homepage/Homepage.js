@@ -45,7 +45,7 @@ class Homepage extends Component {
             <li><button className="btn">Contact me</button></li>
           </ul>
 
-          <Modal className="modal" isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()} width="80" height="80">
+          <Modal className="modal" isOpen={this.state.isModalOpen} onClose={() => this.toggleModal()}>
             <InquiryForm toggleModal={this.toggleModal.bind(this)} />
           </Modal>
 
