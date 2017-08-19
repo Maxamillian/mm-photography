@@ -56,7 +56,7 @@ table {
 */
 
 body {
-  background: #fff;
+  background: #fffbef;
   color: #600000;
   font-family: 'Zilla Slab', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, serif;
 }
@@ -232,6 +232,9 @@ a:hover {
   z-index: 9998;
   background: rgba(0, 0, 0, 0.3);
 }
+#noScroll {
+  overflow: hidden;
+}
 
 /*
   ========================================
@@ -325,5 +328,9 @@ textarea {
 }
 .submit {
   float: right;
+}
+.inquirySection input {
+  display: inline-block;
+  margin-right: 27px;
 }
 

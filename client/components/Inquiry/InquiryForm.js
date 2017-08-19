@@ -23,16 +23,16 @@ class InquiryForm extends Component {
   }
 
   render() {
-
     return (
-
-      this.state.tab === 1 && (
+      (this.state.tab === 1 &&
         <div className="inquiry">
           <h1>Submit an inquiry</h1>
 
-          <p>What's your name?</p>
-          <input type="text" placeholder="First"/>
-          <input type="text" placeholder="Last"/>
+          <div className="inquirySection">
+            <p>What's your name?</p>
+            <input type="text" placeholder="First" />
+            <input type="text" placeholder="Last" />
+          </div>
 
           <p>What type of photo shoot are you planning?</p>
           <select name="type">
@@ -43,25 +43,24 @@ class InquiryForm extends Component {
           </select>
 
           <p>When is the event?</p>
-          <input type="date"/>
+          <input type="date" />
 
           <p>Where are you planning it?</p>
-          <input type="text" placeholder="Location"/>
+          <input type="text" placeholder="Location" />
 
           <p>How long is this shoot?</p>
-          <input type="text" placeholder="# of hours"/>
+          <input type="text" placeholder="# of hours" />
 
           <p>What's your budget?</p>
-          <input type="text" placeholder="Budget"/>
+          <input type="text" placeholder="Budget" />
 
           <button className="submit btn" onClick={() => this.toggleTab()}>Submit</button>
-        </div>
-      ) || this.state.tab === 2 && (
-      <div className="inquiry">
-        <h1>Form Submitted!</h1>
-        <p>(Just kidding!)</p>
-      </div>
-      )
+        </div>) ||
+      (this.state.tab === 2 &&
+        <div className="inquiry">
+          <h1>Form Submitted!</h1>
+          <p>(Just kidding!)</p>
+        </div>)
     );
   }
 }

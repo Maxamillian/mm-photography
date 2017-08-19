@@ -5,7 +5,7 @@ class Modal extends Component {
     e.preventDefault();
 
     if (this.props.onClose) {
-      this.props.onClose()
+      this.props.onClose();
     }
   }
 
@@ -43,14 +43,12 @@ class Modal extends Component {
         <div className={this.props.className} style={modalStyle}>
           {this.props.children}
         </div>
-        {
-          !this.propsnoBackdrop &&
+        {!this.propsnoBackdrop &&
           <div
             className="backdrop {this.props.backdropClassName}"
             style={backdropStyle}
             onClick={e => this.close(e)}
-          />
-        }
+          />}
       </div>
     );
   }

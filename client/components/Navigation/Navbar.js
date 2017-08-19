@@ -9,8 +9,8 @@ class NavBarLinks extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isModalOpen: this.props.isModalOpen
-    }
+      isModalOpen: false
+    };
   }
 
   toggleModal() {

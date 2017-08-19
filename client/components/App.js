@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route } from 'react-router';
+import { Router, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Navbar from './Navigation/Navbar';
 
@@ -15,8 +15,9 @@ class App extends Component {
     return (
       <Router history={history}>
         <div>
-          <Navbar isModalOpen={false} />
-          <Route exact path="/" component={Homepage}/>
+          Hello world
+          <Navbar />
+          <Route exact path="/" component={Homepage} />
         </div>
       </Router>
     );
