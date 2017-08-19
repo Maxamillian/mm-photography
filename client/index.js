@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Root from './components/Root';
+import App from './components/App';
 
 const appElement = document.getElementById('app');
 
 render(
-  <Root />,
+  <App />,
   appElement
 );

@@ -14,7 +14,10 @@ class Modal extends Component {
       return null;
     }
 
-    let modalStyle = {};
+    let modalStyle = {
+      height: '80%',
+      width: '80%'
+    };
 
     if (this.props.width && this.props.height) {
       modalStyle.width = this.props.width + '%';

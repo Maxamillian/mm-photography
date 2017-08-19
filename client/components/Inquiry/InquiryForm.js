@@ -29,17 +29,37 @@ class InquiryForm extends Component {
       this.state.tab === 1 && (
         <div className="inquiry">
           <h1>Submit an inquiry</h1>
-          <p>What's your name?</p>
 
+          <p>What's your name?</p>
           <input type="text" placeholder="First"/>
           <input type="text" placeholder="Last"/>
 
-          <button className="btn cancel" onClick={() => this.props.toggleModal()}>Never mind</button>
-          <button className="btn" onClick={() => this.toggleTab()}>Next</button>
+          <p>What type of photo shoot are you planning?</p>
+          <select name="type">
+            <option value="wedding">Wedding</option>
+            <option value="engagement">Engagement</option>
+            <option value="family">Family</option>
+            <option value="other">Other Event</option>
+          </select>
+
+          <p>When is the event?</p>
+          <input type="date"/>
+
+          <p>Where are you planning it?</p>
+          <input type="text" placeholder="Location"/>
+
+          <p>How long is this shoot?</p>
+          <input type="text" placeholder="# of hours"/>
+
+          <p>What's your budget?</p>
+          <input type="text" placeholder="Budget"/>
+
+          <button className="submit btn" onClick={() => this.toggleTab()}>Submit</button>
         </div>
       ) || this.state.tab === 2 && (
       <div className="inquiry">
-        <h1>New tab!</h1>
+        <h1>Form Submitted!</h1>
+        <p>(Just kidding!)</p>
       </div>
       )
     );

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react';;
 import { Link } from 'react-router-dom';
 
 import Modal from '../Modal';
@@ -8,7 +8,7 @@ class Homepage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isModalOpen: this.props.isModalOpen
+      isModalOpen: false
     };
   }
 
