@@ -15,7 +15,6 @@ class App extends Component {
     return (
       <Router history={history}>
         <div>
-          Hello world
           <Navbar />
           <Route exact path="/" component={Homepage} />
         </div>
