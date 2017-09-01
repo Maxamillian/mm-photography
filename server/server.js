@@ -7,8 +7,7 @@ const port = process.env.port || 3000;
 const root = path.join(__dirname, '/..');
 
 app.use(express.static(root));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.listen(port, () => {
   console.log('listening on port', port);
